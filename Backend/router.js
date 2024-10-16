@@ -6,8 +6,8 @@ dotenv.config();
 const router = express.Router();
 
 router.post('/improve-text', async (req, res) => {
-  const apiKey = process.env.OPENAI_API_KEY; // Make sure this is set in your .env file
-  const { message } = req.body; // Получаем текст из запроса
+  const apiKey = process.env.OPENAI_API_KEY;
+  const { message } = req.body; 
 
   if (!message) {
     return res.status(400).json({ message: 'Message cannot be empty' });

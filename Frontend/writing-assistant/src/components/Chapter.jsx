@@ -58,7 +58,7 @@ export default function AddChapter() {
     const existingChapters = JSON.parse(localStorage.getItem('chapters')) || [];
     const newChapters = [...existingChapters, data];
     localStorage.setItem('chapters', JSON.stringify(newChapters));
-    navigate("/"); // Redirect after saving
+    navigate("/");
   };
 
   return (

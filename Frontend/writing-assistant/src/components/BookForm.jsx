@@ -17,7 +17,7 @@ export default function BookForm() {
   const handleDeleteChapter = (indexToDelete) => {
     const updatedChapters = chapters.filter((_, index) => index !== indexToDelete);
     setChapters(updatedChapters);
-    localStorage.setItem('chapters', JSON.stringify(updatedChapters)); // Обновляем localStorage
+    localStorage.setItem('chapters', JSON.stringify(updatedChapters));
   };
 
   const onSubmit = (data) => {
